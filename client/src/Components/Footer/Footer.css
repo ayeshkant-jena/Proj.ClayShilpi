@@ -1,0 +1,56 @@
+.footer {
+    position: relative;
+    background-color: var(--main-color);
+    height: 200px;
+}
+
+.contact {
+    height: 80%;
+    text-align: center;
+    color: var(--bg-color1);
+    padding-top: 20px; /* Added for spacing */
+}
+
+.contact h1 {
+    text-shadow: 0 0px 10px var(--text-color1);
+    margin-bottom: 10px; /* Improved spacing */
+}
+
+.contact-link {
+    display: inline-flex;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 5px; /* Added margin for spacing between links */
+    height: 60px;
+    align-items: center;
+}
+
+.copyright {
+    height: 20%;
+    text-align: center;
+    color: var(--bg-color1);
+    padding-top: 10px; /* Added for better spacing */
+}
+
+/* Floating button styles */
+.floating-button {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-color1);
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.floating-button:hover {
+    background-color: #333;
+    color: #f1ecd2;
+}

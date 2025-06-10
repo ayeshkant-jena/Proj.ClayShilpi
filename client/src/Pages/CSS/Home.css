@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", sans-serif;
+}
+
+:root{
+    --bg-color1:#f1ecd2;
+    --bg-color2: #AF8F6F;
+    --text-color1: #543310;
+    --text-color2:#2a1b0b;
+    --main-color: #74512D;
+}
+
+section{
+    min-height: 100vh;
+}
+
+/* HOME SECTION  */
+.home {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color1);
+    flex-direction: row;
+}
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.textbox {
+    width: auto;
+    position: absolute;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 2rem;
+    color: var(--text-color2);
+}
+.textbox h1 {
+    margin-bottom: 30px;
+}
+.textbox p {
+    font-size: 2rem;
+    margin-top: 60px;
+}
+.textbox span {
+    background-color: var(--main-color);
+    height: 2px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+}
+
+.wrapper {
+    width: 60%;
+    /* max-width: 80%; */
+    max-width: 500px;
+    position: relative;
+    height: 500px;
+    margin-top: 5rem;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(
+        to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0)
+    );
+    mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+    0% { left: 100%; }
+    20% { left: 0; }
+    25% { left: 0; }
+    45% { left: -500px; }
+    50% { left: -500px; }
+    70% { left: -1000px; }
+    75% { left: -1000px; }
+    95% { left: -1500px; }
+    100% { left: -1500px; }
+}
+
+.item {
+    width: 500px;
+    height: 500px;
+    border-radius: 6px;
+    position: absolute;
+    /* left: 0; */
+    left: max(calc(500px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.item1 {
+    animation-delay: 0s;
+}
+
+.item2 {
+    animation-delay: -15s;
+}
+
+.item3 {
+    animation-delay: -10s;
+}
+
+.item4 {
+    animation-delay: -5s;
+}
+/* .item1 {
+    animation-delay: -22.5s;
+}
+
+.item2 {
+    animation-delay: -15s;
+}
+
+.item3 {
+    animation-delay: -7.5s;
+}
+
+.item4 {
+    animation-delay: 0s;
+} */
+
+
+/* SKILLED CRAFTSMANSHIP SECTION  */
+.SkilledCraftsmanship{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color2);
+
+}
+.SC-textbox{
+    position: absolute;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+.SC-textbox h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+}
+
+.SC-textbox p{
+    font-size: 1.5rem;
+    margin-top: 45px;
+    font-weight: 600;
+}
+
+.SC-image{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 350px;
+}
+
+.SC-image span{
+    width: 5rem;
+}
+.cm1,.cm2,.cm3{
+    width: auto;
+    height: 350px;
+}
+
+/* CUSTOMER REVIEW SECTION*/
+
