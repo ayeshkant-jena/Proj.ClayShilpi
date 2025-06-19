@@ -18,6 +18,16 @@
     color: #454545;
     font-size: 15px;
     font-weight: 600;
+    text-align: center;
+}
+.listproduct-allproducts{
+    /* display: grid; */
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
 }
 .listproduct-format{
     align-items: center;
