@@ -1,13 +1,16 @@
 .list-product{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 740px;
+    height: 90vh;
     padding: 10px 50px;
-    margin: 30px;
+    /* margin: 30px; */
     border-radius: 6px;
     background: white;
+    overflow-y: scroll;
+    scrollbar-width: thin;
 }
 .listproduct-format-main{
     display: grid;

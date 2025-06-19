@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet');
 body{
     margin: 0;
     font-family: "Poppins";
     background-color: #f6f6f6;
     height: 100vh;
+    font-family: "Nunito", sans-serif;
+}
+:root{
+    --bg-color1:#f1ecd2;
+    --bg-color2: #AF8F6F;
+    --text-color1: #543310;
+    --text-color2:#2a1b0b;
+    --main-color: #74512D;
 }

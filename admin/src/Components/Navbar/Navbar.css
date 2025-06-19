@@ -1,15 +1,29 @@
+:root{
+    --bg-color0:#f6f4ea;
+    --bg-color1:#f1ecd2;
+    --bg-color2: #AF8F6F;
+    --text-color1: #543310;
+    --text-color2:#2a1b0b;
+    --main-color: #74512D;
+}
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 60px;
-    box-shadow: 0 1px 3px -2px #000;
-    margin-bottom: 1px;
-    background: white;
+    justify-content: center;
+    /* padding: 15px 60px; */
+    height: 10vh;
+    /* box-shadow: 0 2px 3px -2px var(--text-color2); */
+    /* margin-bottom: 2px; */
+    background: var(--bg-color1);
 }
 .nav-logo{
     width: 200px;
 }
 .nav-profile{
     width: 75px;
+}
+.navbar h1{
+    color: var(--text-color2);
+    margin: 0;
+    font-weight: 800;
 }
