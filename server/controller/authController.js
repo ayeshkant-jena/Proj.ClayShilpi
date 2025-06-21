@@ -13,7 +13,7 @@ exports.signup = async (req, res) => {
   let cart = {};
   for (let i = 0; i < 300; i++) cart[i] = 0;
 
-  const user = new User({ name: username, email, password, cartData: cart });
+  const user = new User({ name: req.body.username, email: req.body.email, password: req.body.password, cartData: cart });
   await user.save();
 
   const token = jwt.sign({ user: { id: user._id } },process.env.JWT_SECRET);

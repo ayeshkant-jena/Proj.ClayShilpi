@@ -23,6 +23,12 @@
     margin: 0 5px; /* Added margin for spacing between links */
     height: 60px;
     align-items: center;
+    color: red;
+    z-index: 1;
+}
+.contact-link img{
+    width: auto;
+    height: 80%;
 }
 
 .copyright {

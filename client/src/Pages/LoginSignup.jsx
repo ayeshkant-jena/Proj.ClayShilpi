@@ -6,8 +6,8 @@ const LoginSignup = () => {
     const [state,setState] = useState("Login");
     const [formData,setFormData] = useState({
         username:"",
-        password:"",
-        email:""
+        email:"",
+        password:""
     })
 
     const changeHandler = (e)=>{
@@ -19,8 +19,8 @@ const LoginSignup = () => {
         let responseData;
         await fetch('http://localhost:4000/login',{
             method:'POST',
-            header:{
-                Accept:'application/form-data',
+            headers:{
+                Accept:'application/json',
                 'Content-Type':'application/json',
             },
             body: JSON.stringify(formData),
@@ -40,8 +40,8 @@ const LoginSignup = () => {
         let responseData;
         await fetch('http://localhost:4000/signup',{
             method:'POST',
-            header:{
-                Accept:'application/form-data',
+            headers:{
+                Accept:'application/json',
                 'Content-Type':'application/json',
             },
             body: JSON.stringify(formData),
@@ -52,7 +52,7 @@ const LoginSignup = () => {
             window.location.replace("/");
         }
         else{
-            alert(responseData.error);
+            alert("Fetch error:",responseData.error);
         }
     }
 
@@ -76,8 +76,8 @@ const LoginSignup = () => {
                     {state==="Sign Up"?<p className="loginsignup-login">Already have an account? <span onClick={()=>{setState("Login")}}>Login Here</span></p>:<p className="loginsignup-login">Don't have an account? <span onClick={()=>{setState("Sign Up")}}>Create Here</span></p>}
                     
                     <div className="loginsignup-agree">
-                        <input type="checkbox" name='' id=' ' />
-                        <p>By continuing, I agree to the terms of use & privacy policy.</p>
+                        {state==="Sign Up"?<input type="checkbox" name='' id=' ' /> :""}
+                        {state==="Sign Up"?<p>By continuing, I agree to the terms of use & privacy policy.</p>:""}
                     </div>
                 </div>
             </div>
