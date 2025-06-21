@@ -49,6 +49,7 @@ const AddProduct = ()=>{
             }).then((resp)=>resp.json()).then((data)=>{
                 data.success?alert("Product Added"):alert("Failed")
             })
+            window.location.reload();
         }
     }
 

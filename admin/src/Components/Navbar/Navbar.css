@@ -9,15 +9,16 @@
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* padding: 15px 60px; */
+    justify-content: space-between;
+    padding: 0px 100px;
     height: 10vh;
     /* box-shadow: 0 2px 3px -2px var(--text-color2); */
     /* margin-bottom: 2px; */
     background: var(--bg-color1);
 }
 .nav-logo{
-    width: 200px;
+    width: 60px;
+    border-radius: 30px;
 }
 .nav-profile{
     width: 75px;
@@ -26,4 +27,14 @@
     color: var(--text-color2);
     margin: 0;
     font-weight: 800;
+}
+.navbar button{
+        font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    display: flex
+;
+    padding: 7px 15px;
+    background-color: var(--text-color1);
+    color: var(--bg-color0);
 }
